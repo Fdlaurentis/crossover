@@ -1,0 +1,35 @@
+.beginning {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+    color: #ffff;
+    font-weight: bolder;
+}
+
+.beginning .container {
+    width: 300px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 15px;
+}
+.beginning img {
+    width: 50%;
+    height: auto;
+}
+
+.beginning .mision {
+    background: #fd9000;
+}
+
+.beginning .vision {
+    background: #313131;
+}
+
+.beginning .vision img {
+}
+.beginning .valores {
+    background: #fd9000;
+}
