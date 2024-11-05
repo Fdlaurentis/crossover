@@ -28,8 +28,28 @@
     background: #313131;
 }
 
-.beginning .vision img {
-}
 .beginning .valores {
     background: #fd9000;
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .beginning {
+        grid-template-columns: auto auto;
+        gap: 1rem;
+    }
+
+    .container:nth-child(3) {
+        grid-column: 1 / -1; /* Hacer que el tercer elemento ocupe ambas columnas */
+        justify-self: center; /* Centrar el elemento horizontalmente */
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .beginning {
+        display: none;
+    }
+
+    .title {
+        display: none;
+    }
 }

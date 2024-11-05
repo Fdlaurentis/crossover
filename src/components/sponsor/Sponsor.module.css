@@ -1,0 +1,35 @@
+.sponsor {
+    width: 75vw;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+}
+
+.sponsor .track {
+    display: flex;
+    animation: scroll 40s linear infinite;
+    -webkit-animation: scroll 40s linear infinite;
+    width: calc(200px * 10);
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.sponsor .slide {
+    width: 200px;
+}
+
+.sponsor .slide img {
+    width: 100%;
+    height: auto;
+}
+
+@keyframes scroll {
+    0% {
+        -webkit-animation: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-animation: translateX(calc(-200px * 5));
+        transform: translateX(calc(-200px * 5));
+    }
+}

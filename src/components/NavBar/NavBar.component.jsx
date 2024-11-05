@@ -4,6 +4,7 @@ const NavBar = () => {
     return (
         <div className={style.navbar}>
             <img src="https://i.ibb.co/Kqt5n5c/Logo.png" alt="Logo" />
+            <i className={`fa-solid fa-bars ${style.menuHamb}`}></i>
             <div className={style.menu}>
                 <ul>
                     <li>Historia</li>

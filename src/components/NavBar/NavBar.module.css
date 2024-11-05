@@ -8,6 +8,11 @@
     color: #fff;
     position: fixed;
     top: 0;
+    z-index: 1000;
+}
+
+.menuHamb {
+    display: none;
 }
 
 .navbar img {
@@ -23,4 +28,24 @@
 
 .menu ul li {
     cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    .menu {
+        display: none;
+    }
+
+    .menuHamb {
+        display: block;
+        cursor: pointer;
+        color: #fd9000;
+    }
+
+    .navbar {
+        padding: 10px 0.2in;
+    }
+
+    .navbar img {
+        width: 1in;
+    }
 }

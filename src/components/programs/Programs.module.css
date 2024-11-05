@@ -19,25 +19,36 @@
     height: 250px;
 }
 
-.programs .containerProgram .contendorSpan {
+.programs .containerProgram .contendorSpan span {
     position: absolute;
-    z-index: 1;
-    left: 0;
-    height: 100%;
-    width: 70%;
+
     background: linear-gradient(
         to bottom,
         rgba(254, 254, 254, 0.5),
         rgba(255, 255, 255, 0.3)
     );
-    display: flex;
-    align-items: center;
-    border-top-right-radius: 60%;
+    height: 100%;
+    width: 100%;
+    font-size: 1.5em;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bolder;
+    color: white;
+    text-shadow: 1px 1px 0.1px #ff7300, -1px -1px 0.1px #ff7300,
+        -1px 1px 0.1px #ff7300, 1px -1px 0.1px #ff7300;
+    text-align: center;
+    cursor: pointer;
 }
 
-.programs .containerProgram .contendorSpan span {
-    color: #ff7300f3;
-    font-size: 1.5em;
-    width: 50%;
-    margin: 10px;
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .programs {
+        grid-template-columns: auto auto;
+        gap: 2rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .programs {
+        grid-template-columns: auto;
+        gap: 1rem;
+    }
 }
