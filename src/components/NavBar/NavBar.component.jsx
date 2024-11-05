@@ -1,19 +1,34 @@
+import { useState } from 'react';
 import style from './NavBar.module.css';
 
 const NavBar = () => {
+    const [isOpen, setIsOpen] = useState(false);
     return (
-        <div className={style.navbar}>
-            <img src="https://i.ibb.co/Kqt5n5c/Logo.png" alt="Logo" />
-            <i className={`fa-solid fa-bars ${style.menuHamb}`}></i>
-            <div className={style.menu}>
-                <ul>
+        <header>
+            <img
+                src="https://i.ibb.co/Kqt5n5c/Logo.png"
+                alt="Logo"
+                className={style.logo}
+            />
+            <i
+                className={`fa-solid fa-bars ${style.abriMenu}`}
+                onClick={() => setIsOpen(!isOpen)}
+            >
+                {' '}
+            </i>
+            <nav className={!isOpen ? style.nav : style.isOpen}>
+                <i
+                    class={`fa-solid fa-xmark ${style.cerrarMenu}`}
+                    onClick={() => setIsOpen(!isOpen)}
+                ></i>
+                <ul className={style.navList}>
                     <li>Historia</li>
                     <li>Sedes</li>
                     <li>Programas</li>
                     <li>Contacto</li>
                 </ul>
-            </div>
-        </div>
+            </nav>
+        </header>
     );
 };
 

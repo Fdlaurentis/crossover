@@ -13,10 +13,18 @@ const Footer = () => {
             <div className={style.redes}>
                 <span>Síguenos</span>
                 <div className={style.iconos}>
-                    <i class="fa-brands fa-facebook-f"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-whatsapp"></i>
-                    <i class="fa-brands fa-tiktok"></i>
+                    <a href="https://www.facebook.com/profile.php?id=100063685296350">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/crossoveracademy/">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.link/mf3yg1">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@crossoveracademy">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
                 </div>
             </div>
         </div>

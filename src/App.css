@@ -17,6 +17,11 @@ ul {
     list-style: none;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .body {
     background: #000;
     display: flex;
@@ -27,7 +32,13 @@ ul {
 .imgHeader {
     width: 100%;
     height: auto;
-    margin-top: 82.33px;
+    margin-top: 126.33px;
+}
+
+p {
+    color: #000;
+    font-weight: bolder;
+    padding: 20px;
 }
 
 /* @keyframes appear {

@@ -1,5 +1,5 @@
 .sponsor {
-    width: 75vw;
+    width: 100%;
     height: auto;
     margin: auto;
     overflow: hidden;
@@ -7,9 +7,9 @@
 
 .sponsor .track {
     display: flex;
-    animation: scroll 40s linear infinite;
+    animation: scroll 10s linear infinite;
     -webkit-animation: scroll 40s linear infinite;
-    width: calc(200px * 10);
+    width: calc(200px * 8);
     gap: 1.5rem;
     align-items: center;
 }
