@@ -36,13 +36,40 @@
     text-shadow: 1px 1px 0.1px #ff7300, -1px -1px 0.1px #ff7300,
         -1px 1px 0.1px #ff7300, 1px -1px 0.1px #ff7300;
     text-align: center;
+    border-top-right-radius: 60%;
+}
+
+.button {
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
     cursor: pointer;
+    background: #ff7300;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.button:hover {
+    color: #ff7300;
+    background: #fff;
 }
 
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
     .programs {
         grid-template-columns: auto auto;
         gap: 2rem;
+    }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1300px) {
+    .programs {
+        grid-template-columns: auto auto auto;
+        gap: 2rem;
+    }
+
+    .programs > :nth-child(4) {
+        grid-column: 1 / -1;
+        justify-self: center;
     }
 }
 

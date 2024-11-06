@@ -1,0 +1,52 @@
+{
+    "information": [
+        {
+            "id": 0,
+            "tittle": "Escuela Permanente",
+            "body": "Desarrollamos integralmente a niños y jóvenes tanto en el ámbito deportivo como en el personal, fomentando habilidades técnicas, tácticas y físicas propias del baloncesto, al mismo tiempo que se promueven valores como la disciplina, el trabajo en equipo, la responsabilidad, el respecto y la perseverancia.",
+            "sedes": [],
+            "images": [
+                "https://i.ibb.co/CbV4x3g/permanete.jpg",
+                "https://i.ibb.co/mDPxbVp/competencia.jpg",
+                "https://i.ibb.co/dfW89RR/office.jpg",
+                "https://i.ibb.co/m4WyFDr/Summer.jpg"
+            ]
+        },
+        {
+            "id": 1,
+            "tittle": "Club de Competencias",
+            "body": "Competitividad a nive local, regional o nacional: Participar en competencias y torneos a niverso niveles, buscando obtener resultados competitivos y lograr reconocimientos. Identificación y promoción de talentos en el basketball y ofrecerles oportunidades de desarrollo y visibilidad, potenciando su carrera deportiva.",
+            "sedes": [],
+            "images": [
+                "https://i.ibb.co/CbV4x3g/permanete.jpg",
+                "https://i.ibb.co/mDPxbVp/competencia.jpg",
+                "https://i.ibb.co/dfW89RR/office.jpg",
+                "https://i.ibb.co/m4WyFDr/Summer.jpg"
+            ]
+        },
+        {
+            "id": 2,
+            "tittle": "After Office",
+            "body": "",
+            "sedes": [],
+            "images": [
+                "https://i.ibb.co/CbV4x3g/permanete.jpg",
+                "https://i.ibb.co/mDPxbVp/competencia.jpg",
+                "https://i.ibb.co/dfW89RR/office.jpg",
+                "https://i.ibb.co/m4WyFDr/Summer.jpg"
+            ]
+        },
+        {
+            "id": 3,
+            "tittle": "Summer Camp",
+            "body": "",
+            "sedes": [],
+            "images": [
+                "https://i.ibb.co/CbV4x3g/permanete.jpg",
+                "https://i.ibb.co/mDPxbVp/competencia.jpg",
+                "https://i.ibb.co/dfW89RR/office.jpg",
+                "https://i.ibb.co/m4WyFDr/Summer.jpg"
+            ]
+        }
+    ]
+}

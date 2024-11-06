@@ -43,6 +43,10 @@
     cursor: pointer;
 }
 
+.carrusel img {
+    width: 100px;
+}
+
 @keyframes dropTop {
     0% {
         transform: translateY(-100%) scale(0);

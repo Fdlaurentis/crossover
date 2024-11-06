@@ -1,34 +1,40 @@
 import style from './PopUp.module.css';
 import icon from '../../assets/icon.png';
+import jsonInf from '../../assets/info.json';
 
-const PopUp = ({ setIsOpenPopup }) => {
+const PopUp = ({ setIsOpenPopup, position }) => {
+    const info = jsonInf.information[position];
+    if (!info) return null; // Verifica que la información existe
+
     return (
-        <div onClick={setIsOpenPopup.bind(this, false)} className={style.popUp}>
+        <div onClick={() => setIsOpenPopup(null)} className={style.popUp}>
             {/* Content */}
             <div onClick={(e) => e.stopPropagation()} className={style.content}>
                 {/* Header */}
                 <div className={style.headerPopUp}>
-                    <h1>Escuela Permanente</h1>
+                    <h1>{info.tittle}</h1>
+
                     <div
-                        onClick={setIsOpenPopup.bind(this, false)}
+                        onClick={() => setIsOpenPopup(null)}
                         className={style.closePopUp}
                     >
                         <i
-                            class="fa-solid fa-xmark"
+                            className="fa-solid fa-xmark"
                             style={{ color: 'black' }}
                         ></i>
                     </div>
                 </div>
+
+                {/*Images */}
+                <div className={style.carrusel}>
+                    {/*{info.images.map((img) => (*/}
+                    <img src={info.images[position]} key={info.id} />
+                    {/*}))}*/}
+                </div>
+
                 {/* Body */}
                 <div>
-                    <p>
-                        Desarrollamos integralmente a niños y jóvenes tanto en
-                        el ámbito deportivo como en el personal, fomentando
-                        habilidades técnicas, tácticas y físicas propias del
-                        baloncesto, al mismo tiempo que se promueven valores
-                        como la disciplina, el trabajo en equipo, la
-                        responsabilidad, el respecto y la perseverancia.
-                    </p>
+                    <p>{info.body}</p>
                 </div>
                 {/* Footer */}
                 <a href="https://wa.link/mf3yg1">
