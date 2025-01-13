@@ -10,17 +10,17 @@ const NavBar = () => {
                 alt="Logo"
                 className={style.logo}
             />
-            <i
+            {/* <i
                 className={`fa-solid fa-bars ${style.abriMenu}`}
                 onClick={() => setIsOpen(!isOpen)}
             >
                 {' '}
-            </i>
+            </i> */}
             <nav className={!isOpen ? style.nav : style.isOpen}>
-                <i
+                {/* <i
                     className={`fa-solid fa-xmark ${style.cerrarMenu}`}
                     onClick={() => setIsOpen(!isOpen)}
-                ></i>
+                ></i> */}
                 <ul className={style.navList}>
                     <li>Historia</li>
                     <li>Sedes</li>

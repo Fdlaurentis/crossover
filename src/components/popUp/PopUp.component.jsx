@@ -1,5 +1,5 @@
 import style from './PopUp.module.css';
-import icon from '../../assets/icon.png';
+import iconoWhatsApp from '../../assets/icon.png';
 import jsonInf from '../../assets/info.json';
 
 const PopUp = ({ setIsOpenPopup, position }) => {
@@ -38,12 +38,15 @@ const PopUp = ({ setIsOpenPopup, position }) => {
                 </div>
                 {/* Footer */}
                 <a href="https://wa.link/mf3yg1">
-                    <footer className={style.footerPopUp}>
-                        <img
-                            src={icon}
-                            style={{ width: '35px', height: '35px' }}
-                        />
-                        <h2 style={{ color: '#189d0e' }}>Contactanos</h2>
+                    <footer
+                        className={style.footerPopUp}
+                        style={{ color: '#189d0e' }}
+                    >
+                        <i
+                            className="fa-brands fa-whatsapp"
+                            style={{ fontWeight: 'bold', fontSize: '30px' }}
+                        ></i>
+                        <h2>Contactanos</h2>
                     </footer>
                 </a>
             </div>

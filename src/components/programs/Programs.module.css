@@ -2,34 +2,36 @@
     color: #fff;
     font-weight: bolder;
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: repeat(4, auto);
     width: 100%;
     align-items: center;
     justify-content: space-around;
 }
 
 .programs .containerProgram {
-    width: 350px;
-    height: 250px;
+    width: 450px;
+    height: 350px;
     position: relative;
 }
 
 .programs .containerProgram img {
     width: 100%;
-    height: 250px;
+    height: 100%;
     border-top-left-radius: 30px;
     border-bottom-right-radius: 30px;
 }
 
+.fondo {
+    background: #ff730061;
+    width: 100px;
+    height: 70px;
+    position: absolute;
+    right: 0;
+    border-bottom-left-radius: 100%;
+}
+
 .programs .containerProgram .contendorSpan span {
     position: absolute;
-
-    background: linear-gradient(
-        to bottom,
-        rgba(254, 254, 254, 0.5),
-        rgba(255, 255, 255, 0.3)
-    );
-    height: 100%;
     width: 100%;
     font-size: 1.5em;
     color: #ff7300;
@@ -38,10 +40,6 @@
         -1px 1px 0.1px #821131, 1px -1px 0.1px #821131;
     font-family: 'Poppins', serif;
     font-weight: 400;
-    text-align: center;
-    border-top-right-radius: 60%;
-    border-top-left-radius: 30px;
-    border-bottom-right-radius: 30px;
 }
 
 .button {
@@ -59,16 +57,9 @@
     background: #fff;
 }
 
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
+@media (min-width: 1240px) and (max-width: 2024px) {
     .programs {
-        grid-template-columns: auto auto;
-        gap: 2rem;
-    }
-}
-
-@media only screen and (min-width: 1025px) and (max-width: 1300px) {
-    .programs {
-        grid-template-columns: auto auto auto;
+        grid-template-columns: repeat(3, auto);
         gap: 2rem;
     }
 
@@ -78,9 +69,26 @@
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media (min-width: 601px) and (max-width: 1239px) {
+    .programs {
+        grid-template-columns: repeat(2, auto);
+        gap: 1rem;
+    }
+
+    .programs .containerProgram {
+        width: 350px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 600px) {
     .programs {
         grid-template-columns: auto;
         gap: 1rem;
+    }
+
+    .programs .containerProgram {
+        width: 310px;
+        height: 210px;
     }
 }

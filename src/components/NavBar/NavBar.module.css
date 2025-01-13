@@ -19,13 +19,13 @@ header i {
     height: auto;
 }
 
-.abriMenu,
+/* .abriMenu,
 .cerrarMenu {
     display: none;
-}
+} */
 
 .navList {
-    list-style-type: none;
+    list-style: none;
     display: flex;
     gap: 1rem;
 }
@@ -42,21 +42,21 @@ header i {
     color: #fd9000;
 } */
 
-@media only screen and (max-width: 600px) {
-    .abriMenu,
+@media (max-width: 600px) {
+    /* .abriMenu,
     .cerrarMenu {
         display: block;
         cursor: pointer;
-    }
+    } */
 
-    .nav {
+    /* .nav {
         display: none;
     }
 
     .isOpen {
         display: flex;
         flex-direction: column;
-        align-items: end;
+        align-items: flex-end;
         gap: 1rem;
         position: absolute;
         top: 0;
@@ -69,6 +69,16 @@ header i {
 
     .navList {
         flex-direction: column;
-        align-items: end;
+        align-items: flex-end;
+    } */
+
+    /* PARA QUITAR EL MENÚ HAMBURGUESA*/
+    header {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .logo {
+        width: 1in;
     }
 }

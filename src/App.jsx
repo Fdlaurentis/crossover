@@ -12,9 +12,9 @@ function App() {
         <div className="body">
             <NavBar />
             <img src={imgHeader} className="imgHeader"></img>
-            <a href="https://wa.link/mf3yg1">
+            {/* <a href="https://wa.link/mf3yg1">
                 <img src={iconoWhatsApp} className="iconWhatsApp" />
-            </a>
+            </a> */}
             <Programs />
             <Beginning />
             <Sponsor />

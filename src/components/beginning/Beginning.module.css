@@ -1,8 +1,8 @@
 .beginning {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(3, auto);
     justify-content: space-evenly;
-    color: #ffff;
+    color: #fff;
     font-weight: bolder;
 }
 
@@ -17,7 +17,7 @@
 
 .container span {
     position: absolute;
-    top: calc(370px / 2);
+    top: 185px; /* Simplificado el cálculo de la posición */
     font-family: 'Poppins', serif;
 }
 
@@ -26,21 +26,9 @@
     height: auto;
 }
 
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
+@media (max-width: 1024px) {
     .beginning {
-        grid-template-columns: auto auto;
-        gap: 1rem;
-    }
-
-    .container:nth-child(3) {
-        grid-column: 1 / -1; /* Hacer que el tercer elemento ocupe ambas columnas */
-        justify-self: center; /* Centrar el elemento horizontalmente */
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .beginning {
-        grid-template-columns: auto auto;
+        grid-template-columns: repeat(2, auto);
         gap: 1rem;
     }
 

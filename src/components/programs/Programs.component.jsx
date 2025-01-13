@@ -10,6 +10,7 @@ const Programs = () => {
             <h1>Programas</h1>
             <div className={`${style.programs} block`}>
                 <div className={`${style.school} ${style.containerProgram}`}>
+                    <div className={style.fondo}></div>
                     <div className={`${style.contendorSpan}`}>
                         <span>Escuela Permanente</span>
                         <div
@@ -30,6 +31,7 @@ const Programs = () => {
                 <div
                     className={`${style.competence} ${style.containerProgram}`}
                 >
+                    <div className={style.fondo}></div>
                     <div className={`${style.contendorSpan}`}>
                         <span>Club de Competencias</span>
                     </div>
@@ -45,6 +47,7 @@ const Programs = () => {
                     <img src="https://i.ibb.co/mDPxbVp/competencia.jpg" />
                 </div>
                 <div className={`${style.office} ${style.containerProgram}`}>
+                    <div className={style.fondo}></div>
                     <div className={`${style.contendorSpan}`}>
                         <span>After Office</span>
                     </div>
@@ -60,6 +63,7 @@ const Programs = () => {
                     <img src="https://i.ibb.co/dfW89RR/office.jpg" />
                 </div>
                 <div className={`${style.summer} ${style.containerProgram}`}>
+                    <div className={style.fondo}></div>
                     <div className={`${style.contendorSpan}`}>
                         <span>Summer Camp</span>
                         <div
