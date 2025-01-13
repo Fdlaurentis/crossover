@@ -53,4 +53,8 @@
         width: 150px;
         height: auto;
     }
+
+    .container span {
+        top: 100px;
+    }
 }
