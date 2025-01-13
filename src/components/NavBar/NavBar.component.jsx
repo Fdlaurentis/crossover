@@ -18,7 +18,7 @@ const NavBar = () => {
             </i>
             <nav className={!isOpen ? style.nav : style.isOpen}>
                 <i
-                    class={`fa-solid fa-xmark ${style.cerrarMenu}`}
+                    className={`fa-solid fa-xmark ${style.cerrarMenu}`}
                     onClick={() => setIsOpen(!isOpen)}
                 ></i>
                 <ul className={style.navList}>

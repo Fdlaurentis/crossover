@@ -7,29 +7,23 @@
 }
 
 .beginning .container {
-    width: 300px;
     cursor: pointer;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    padding: 15px;
+    position: relative;
 }
+
+.container span {
+    position: absolute;
+    top: calc(370px / 2);
+    font-family: 'Poppins', serif;
+}
+
 .beginning img {
-    width: 50%;
+    width: 250px;
     height: auto;
-}
-
-.beginning .mision {
-    background: #fd9000;
-}
-
-.beginning .vision {
-    background: #313131;
-}
-
-.beginning .valores {
-    background: #fd9000;
 }
 
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
@@ -46,10 +40,22 @@
 
 @media only screen and (max-width: 600px) {
     .beginning {
-        display: none;
+        grid-template-columns: auto auto;
+        gap: 1rem;
     }
 
-    .title {
-        display: none;
+    .container:nth-child(3) {
+        grid-column: 1 / -1; /* Hacer que el tercer elemento ocupe ambas columnas */
+        justify-self: center; /* Centrar el elemento horizontalmente */
+    }
+
+    .beginning img {
+        width: 180px;
+        height: auto;
+    }
+
+    .container {
+        gap: 1rem;
+        width: 190px;
     }
 }

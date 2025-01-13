@@ -33,6 +33,8 @@ header i {
 .navList li {
     color: #fff;
     cursor: pointer;
+    font-family: 'Poppins', serif;
+    font-weight: 500;
 }
 
 /* .navList li:hover {
