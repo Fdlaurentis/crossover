@@ -50,12 +50,7 @@
     }
 
     .beginning img {
-        width: 180px;
+        width: 150px;
         height: auto;
-    }
-
-    .container {
-        gap: 1rem;
-        width: 190px;
     }
 }
