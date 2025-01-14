@@ -1,4 +1,4 @@
-.beginning {
+.ethics {
     display: grid;
     grid-template-columns: repeat(3, auto);
     justify-content: space-evenly;
@@ -6,7 +6,7 @@
     font-weight: bolder;
 }
 
-.beginning .container {
+.ethics .container {
     cursor: pointer;
     display: flex;
     flex-direction: column;
@@ -21,13 +21,13 @@
     font-family: 'Poppins', serif;
 }
 
-.beginning img {
+.ethics img {
     width: 250px;
     height: auto;
 }
 
 @media (max-width: 1024px) {
-    .beginning {
+    .ethics {
         grid-template-columns: repeat(2, auto);
         gap: 1rem;
     }
@@ -37,7 +37,7 @@
         justify-self: center; /* Centrar el elemento horizontalmente */
     }
 
-    .beginning img {
+    .ethics img {
         width: 150px;
         height: auto;
     }

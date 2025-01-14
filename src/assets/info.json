@@ -47,6 +47,27 @@
                 "https://i.ibb.co/dfW89RR/office.jpg",
                 "https://i.ibb.co/m4WyFDr/Summer.jpg"
             ]
+        },
+        {
+            "id": 4,
+            "tittle": "Mision",
+            "body": "Fomentar el desarrollo integral de niños y jóvenes a través del baloncesto, promoviendo valores como el trabajo en equipo, la disciplina, el respeto y la superación personal. Brindamos un entorno seguro y educativo donde los jugadores puedan mejorar sus habilidades deportivas, fortalecer su autoestima y formar relaciones positivas, contribuyendo a su crecimiento físico, mental y social.",
+            "sedes": [],
+            "images": []
+        },
+        {
+            "id": 5,
+            "tittle": "Vision",
+            "body": "Ser un Club referente en la formación de jóvenes atletas, impulsando su desarrollo deportivo y personal a través del baloncesto. Aspiramos a crear una comunidad inclusiva y respetuosa, donde cada jugador tenga la oportunidad de alcanzar su máximo potencial, tanto dentro como fuera de la cancha, contribuyendo a la formación de futuros líderes.",
+            "sedes": [],
+            "images": []
+        },
+        {
+            "id": 6,
+            "tittle": "Valores",
+            "body": "Respeto, responsabilidad, disciplina, trabajo en equipo, integridad, solidaridad, resiliencia, comunicación, compañerismo, esfuerzo, disciplina, voluntad, humildad, liderazgo, confianza, motivación, felicidad e inclusión.",
+            "sedes": [],
+            "images": []
         }
     ]
 }

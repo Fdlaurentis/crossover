@@ -1,8 +1,10 @@
 import { useState } from 'react';
 import style from './NavBar.module.css';
+import { useNavigate } from 'react-router-dom';
 
 const NavBar = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const navigate = useNavigate();
     return (
         <header>
             <img
@@ -23,7 +25,13 @@ const NavBar = () => {
                 ></i> */}
                 <ul className={style.navList}>
                     <li>Historia</li>
-                    <li>Sedes</li>
+                    <li
+                        onClick={() => {
+                            navigate('/sedes');
+                        }}
+                    >
+                        Sedes
+                    </li>
                     <li>Programas</li>
                     <li>Contacto</li>
                 </ul>

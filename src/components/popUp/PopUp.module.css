@@ -5,12 +5,16 @@
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 20;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     z-index: 3001;
+}
+
+p {
+    font-family: 'Poppins', serif;
+    font-weight: normal;
 }
 
 .content {
@@ -22,7 +26,6 @@
     animation: dropTop 0.3s linear;
 }
 
-.headerPopUp,
 .footerPopUp {
     border-bottom: 1px solid lightgray;
     padding-bottom: 10px;
@@ -60,3 +63,9 @@
         opacity: 1;
     }
 }
+
+/* @media (max-width: 600px) {
+    .content {
+        width: 330px;
+    }
+} */
