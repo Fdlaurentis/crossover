@@ -12,22 +12,6 @@
     z-index: 3001;
 }
 
-p {
-    font-family: 'Poppins', serif;
-    font-weight: normal;
-    margin-bottom: 0;
-    padding-bottom: 0;
-}
-
-.label {
-    font-family: 'Poppins', serif;
-    font-weight: normal;
-    font-size: 18px;
-    color: orangered;
-    cursor: pointer;
-    margin-bottom: 20px;
-}
-
 .content {
     position: relative;
     background: white;
@@ -58,10 +42,6 @@ p {
     position: absolute;
     top: 10px;
     right: 10px;
-}
-
-.carrusel img {
-    width: 100px;
 }
 
 @keyframes dropTop {

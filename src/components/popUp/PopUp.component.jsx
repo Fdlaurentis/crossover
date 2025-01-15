@@ -1,10 +1,11 @@
 import style from './PopUp.module.css';
-import iconoWhatsApp from '../../assets/icon.png';
 import jsonInf from '../../assets/info.json';
+import { useNavigate } from 'react-router-dom';
 
 const PopUp = ({ setIsOpenPopup, position }) => {
     const info = jsonInf.information[position];
     if (!info) return null; // Verifica que la información existe
+    const navigate = useNavigate();
 
     return (
         <div onClick={() => setIsOpenPopup(null)} className={style.popUp}>
@@ -35,6 +36,14 @@ const PopUp = ({ setIsOpenPopup, position }) => {
                 {/* Body */}
                 <div>
                     <p>{info.body}</p>
+                    <a
+                        onClick={() => {
+                            navigate('/sedes');
+                        }}
+                        className={style.label}
+                    >
+                        Conoce nuestras Sedes
+                    </a>
                 </div>
                 {/* Footer */}
                 <a href="https://wa.link/mf3yg1">

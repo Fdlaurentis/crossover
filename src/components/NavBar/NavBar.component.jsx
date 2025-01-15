@@ -11,6 +11,9 @@ const NavBar = () => {
                 src="https://i.ibb.co/Kqt5n5c/Logo.png"
                 alt="Logo"
                 className={style.logo}
+                onClick={() => {
+                    navigate('/');
+                }}
             />
             {/* <i
                 className={`fa-solid fa-bars ${style.abriMenu}`}
@@ -32,8 +35,20 @@ const NavBar = () => {
                     >
                         Sedes
                     </li>
-                    <li>Programas</li>
-                    <li>Contacto</li>
+                    <li
+                        onClick={() => {
+                            navigate('/programas');
+                        }}
+                    >
+                        Programas
+                    </li>
+                    <li
+                        onClick={() => {
+                            navigate('/contacto');
+                        }}
+                    >
+                        Contacto
+                    </li>
                 </ul>
             </nav>
         </header>

@@ -5,6 +5,8 @@ import NavBar from './components/NavBar/NavBar.component';
 import Footer from './components/Footer/Footer.component';
 import Sedes from './components/sedes/Sedes.component';
 import Home from './components/home/Home.component';
+import Programs from './components/programs/Programs.component';
+import Contact from './components/contact/Contact.component';
 
 function App() {
     return (
@@ -18,6 +20,8 @@ function App() {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/sedes" element={<Sedes />} />
+                    <Route path="/programas" element={<Programs />} />
+                    {/* <Route path="/contacto" element={<Contact />} /> */}
                 </Routes>
                 <Footer />
             </HashRouter>

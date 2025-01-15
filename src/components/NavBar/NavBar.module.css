@@ -17,6 +17,7 @@ header i {
 .logo {
     width: 1.2in;
     height: auto;
+    cursor: pointer;
 }
 
 /* .abriMenu,
