@@ -1,62 +1,72 @@
-.popUp {
-    position: fixed;
-    background: rgba(0, 0, 0, 0.6);
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+.contact {
     display: flex;
+    flex-direction: column;
+    width: 100%;
     align-items: center;
-    justify-content: center;
-    text-align: center;
-    z-index: 3001;
 }
 
-.content {
-    position: relative;
-    background: white;
-    border-radius: 8px;
-    width: 350px;
-    padding: 20px 10px;
-    animation: dropTop 0.3s linear;
-}
-
-.footerPopUp {
-    border-bottom: 1px solid lightgray;
-    padding-bottom: 10px;
-}
-
-.footerPopUp {
-    border-top: 1px solid lightgray;
-    padding-top: 10px;
+.contact .linkContact {
+    color: #7d8b7c;
+    text-decoration: none;
     display: flex;
-    justify-content: center;
     align-items: center;
     gap: 1rem;
-    height: 45px;
-    cursor: pointer;
+    font-family: 'Poppins', serif;
+    font-size: 12px;
 }
 
-.closePopUp {
+.input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 10px;
+    position: relative;
+    min-width: 186px;
+    max-width: 186px;
     cursor: pointer;
+    border: 1px solid #020912;
+    background: #fff;
+}
+
+.input > input {
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+.input > .span {
+    font-size: 20px;
     position: absolute;
-    top: 10px;
-    right: 10px;
+    left: 10px;
+    top: 20px;
+    transform: translateY(-10px);
+    transition: 0.7s;
+    pointer-events: none;
 }
 
-@keyframes dropTop {
-    0% {
-        transform: translateY(-100%) scale(0);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0%) scale(1);
-        opacity: 1;
-    }
+.input > .textInput:focus ~ .span {
+    top: 0;
+    font-size: 15px;
 }
 
-/* @media (max-width: 600px) {
-    .content {
-        width: 330px;
+.spanValited {
+    position: absolute;
+    left: 10px;
+    top: 0;
+    transform: translateY(-10px);
+    font-size: 15px;
+    pointer-events: none;
+}
+
+@media (max-width: 620px) {
+    .title {
+        font-size: 22px;
     }
-} */
+
+    .contact .linkContact {
+        font-size: 9px;
+    }
+}
