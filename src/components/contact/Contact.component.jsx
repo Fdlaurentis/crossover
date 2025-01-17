@@ -96,7 +96,7 @@ const Contact = () => {
                     </span>
                 </div>
 
-                <button className="btnHome">Enviar</button>
+                <button className={style.btnHome}>Enviar</button>
             </form>
             <a href="https://wa.link/mf3yg1" className={style.linkContact}>
                 <i

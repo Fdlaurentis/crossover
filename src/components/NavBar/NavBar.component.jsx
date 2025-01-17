@@ -7,6 +7,7 @@ const NavBar = () => {
     const navigate = useNavigate();
     return (
         <header>
+            <h1 className={style.schoolLogo}>Escuela Formativa</h1>
             <img
                 src="https://i.ibb.co/Kqt5n5c/Logo.png"
                 alt="Logo"

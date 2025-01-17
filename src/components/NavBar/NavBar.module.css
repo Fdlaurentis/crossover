@@ -82,4 +82,12 @@ header i {
     .logo {
         width: 1in;
     }
+
+    .schoolLogo {
+        font-size: 15px;
+    }
+
+    header {
+        padding-top: 0;
+    }
 }
