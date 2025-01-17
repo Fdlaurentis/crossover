@@ -3,6 +3,7 @@
     flex-direction: column;
     width: 100%;
     align-items: center;
+    gap: 1rem;
 }
 
 .contact .linkContact {
@@ -15,18 +16,20 @@
     font-size: 12px;
 }
 
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
 .input {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 10px;
-    padding: 10px;
     position: relative;
-    min-width: 186px;
-    max-width: 186px;
     cursor: pointer;
-    border: 1px solid #020912;
-    background: #fff;
+    border-bottom: 1px solid #7d8b7c;
+    padding: 15px;
+    margin-bottom: 15px;
 }
 
 .input > input {
@@ -38,18 +41,19 @@
 }
 
 .input > .span {
-    font-size: 20px;
+    font-size: 15px;
     position: absolute;
     left: 10px;
-    top: 20px;
-    transform: translateY(-10px);
-    transition: 0.7s;
+    bottom: 5px;
+    transform: translateY(0px);
+    transition: transform 0.3s ease-out, font-size 0.3s ease-out;
     pointer-events: none;
+    color: #fff;
 }
 
 .input > .textInput:focus ~ .span {
-    top: 0;
-    font-size: 15px;
+    transform: translateY(-30px);
+    font-size: 8px;
 }
 
 .spanValited {
