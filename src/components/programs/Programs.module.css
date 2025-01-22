@@ -32,14 +32,17 @@
 
 .programs .containerProgram .contendorSpan span {
     position: absolute;
-    width: 100%;
+    width: 50%;
     font-size: 1.5em;
-    color: #ff7300;
+    color: #fff;
     text-align: center;
-    text-shadow: 1px 1px 0.1px #821131, -1px -1px 0.1px #821131,
-        -1px 1px 0.1px #821131, 1px -1px 0.1px #821131;
+    text-shadow: 1px 1px 0.1px #000, -1px -1px 0.1px #000, -1px 1px 0.1px #000,
+        1px -1px 0.1px #000;
     font-family: 'Poppins', serif;
     font-weight: 400;
+    font-weight: bold;
+    top: 80px;
+    left: 55px;
 }
 
 .button {

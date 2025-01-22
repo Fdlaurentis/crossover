@@ -7,6 +7,7 @@ const Sedes = () => {
             <div className={style.sedes}>
                 <div className={style.contenedor}>
                     <h2>Sede Norte</h2>
+
                     <h4>
                         Dirección:
                         <span>
@@ -29,6 +30,19 @@ const Sedes = () => {
                             ecologico de la Armenia
                         </span>
                     </h4>
+                    <a
+                        href="https://wa.link/mf3yg1"
+                        className={style.linkContact}
+                    >
+                        <i
+                            className="fa-brands fa-whatsapp"
+                            style={{
+                                fontWeight: 'bold',
+                                fontSize: '30px',
+                            }}
+                        ></i>
+                        <h2>Contactanos vía WhatsApp</h2>
+                    </a>
                 </div>
             </div>
         </>
